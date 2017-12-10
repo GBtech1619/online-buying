@@ -7,8 +7,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>onlinebuying Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	
+	<!-- Version Information store Here -->
 	<properties>
 		<javaee.version>8.0</javaee.version>
+		<spring.version>4.3.13.RELEASE</spring.version>
 	</properties>
 	<dependencies>
 
@@ -20,17 +23,26 @@
 			<version>${javaee.version}</version>
 			<scope>provided</scope>
 		</dependency>
-
+		<!-- JUNIT -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
-		</dependency> 
+		</dependency>
+
+		<!-- Spring -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
-			<!-- Update to latest version of JAVA  -->
+			<!-- Update to latest version of JAVA -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
